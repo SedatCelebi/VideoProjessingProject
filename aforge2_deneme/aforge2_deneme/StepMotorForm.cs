@@ -91,17 +91,17 @@ namespace aforge2_deneme
                             if (nesneX > 80 && nesneX < 600)
                             {
                                 kalan = nesneX - ortaX;
-                                if (kalan < 0)
+                                if (kalan < -50)
                                 {
                                     // Console.WriteLine("sola dönücek kalan kucuk", kalan);
                                     serialPort1.Write("1");
                                 }
-                                if (kalan == 0)
+                                if (kalan > -50&& kalan < 50)
                                 {
                                     // Console.WriteLine("sola dönücek 0", kalan);
                                     serialPort1.Write("3");
                                 }
-                                if (kalan > 0)
+                                if (kalan > 50)
                                 {
                                     //  Console.WriteLine("sola dönücek kalan buyuk", kalan);
                                     serialPort1.Write("2");
